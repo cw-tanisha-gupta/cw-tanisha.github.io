@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main-container">
+        <h2 class="heading">Sign Up</h2>
+        <form action="" id="signupForm">
+            <label for="name">Username:</label>
+            <input type="text" id="username" name="username" placeholder=" Enter Username" required>
+            <div><p class="para validation">Username must be between 3 and 25 characters</p></div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="hello@example.com" required>
+            <div><p class="para validation">Invalid Email</p></div>
+            <label for="password">Password:</label>
+            <div class="password-img">
+                <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                <input type="image"  id="view-img"  src="passview.png">
+            </div>
+            
+            <!-- <input type="image"  id="view-img"  src="passview.png"> -->
+            <div><p class="para validation">Password must has at least 8 characters that include at least 1 lowercase character, 1 uppercase characters, 1 number and a special character in (!@#$%^&*)</p></div>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="confrm-password" id="confirm-password" name="confirm-password" placeholder="Re-enter Password" required>
+            <div><p  class="para validation">Please enter the password again</p></div>
+             <button type="submit" id="btn">Sign Up</button>
+        </form>
+    </div>
+    <div id="modal-container" class="validation">
+      <button id="close-button" ><img src="close.png" alt=""></button>
+      <div class="message"> You are Signed Up!</div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
