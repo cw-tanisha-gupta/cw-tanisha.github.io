@@ -123,6 +123,11 @@ modalCloseButton.addEventListener("click",()=>{
     emailInput.value="";
     usernameInput.value="";
     confirmPasswordInput.value="";
+     passwordInput.style.borderBlockColor="black";
+     emailInput.style.borderBlockColor="black";
+     usernameInput.style.borderBlockColor="black";
+     confirmPasswordInput.style.borderBlockColor="black";
+
 });
 
 
